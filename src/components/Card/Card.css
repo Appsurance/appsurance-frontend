@@ -1,0 +1,88 @@
+/* 
+ * Card Component Styles - Enhanced Enterprise Design
+ */
+
+.card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.card-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+  color: var(--color-bg-white);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.card-icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.card:hover .card-icon {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.3;
+}
+
+.card-description {
+  color: var(--color-text-medium);
+  line-height: 1.75;
+  flex-grow: 1;
+  font-size: var(--font-size-base);
+  margin-bottom: 0;
+}
+
+.card-link {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--spacing-lg);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  transition: all var(--transition-fast);
+  font-size: var(--font-size-base);
+}
+
+.card-link:hover {
+  gap: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+/* Card Variants */
+.card-bordered {
+  border: 2px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.card-bordered:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-lg);
+}
