@@ -3,7 +3,7 @@
  * Handles all API calls to the backend
  */
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://api.appsurance.in/';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://api.appsurance.in';
 
 class ApiService {
   /**
